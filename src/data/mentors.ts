@@ -14,7 +14,7 @@ export interface Mentor {
   name: string;
   title: string;
   avatar: string;
-  task: number;
+  buddy: number;
   rating: number;
   review: number;
   followed: boolean;
@@ -24,9 +24,9 @@ export const mentors: Mentor[] = [
   {
     id: 1,
     name: 'Curious George',
-    title: 'UI UX Design',
+    title: 'Программ хангамж',
     avatar: Avatar1,
-    task: 40,
+    buddy: 40,
     rating: 4.7,
     review: 750,
     followed: false,
@@ -34,9 +34,9 @@ export const mentors: Mentor[] = [
   {
     id: 2,
     name: 'Abraham Lincoln',
-    title: '3D Design',
+    title: 'Компьютерын ухаан',
     avatar: Avatar2,
-    task: 32,
+    buddy: 32,
     rating: 4.9,
     review: 510,
     followed: true,
@@ -44,9 +44,9 @@ export const mentors: Mentor[] = [
   {
     id: 3,
     name: 'Alex Stanton',
-    title: 'UI / UX Designer',
+    title: 'Мэдээлэлийн технологи',
     avatar: Avatar3,
-    task: 60,
+    buddy: 60,
     rating: 4.9,
     review: 970,
     followed: false,
@@ -54,9 +54,9 @@ export const mentors: Mentor[] = [
   {
     id: 4,
     name: 'Richard Kyle',
-    title: '2D Design',
+    title: 'Мультимедиа',
     avatar: Avatar4,
-    task: 60,
+    buddy: 60,
     rating: 4.7,
     review: 730,
     followed: false,
@@ -64,9 +64,9 @@ export const mentors: Mentor[] = [
   {
     id: 5,
     name: 'Brian Robinson',
-    title: 'Android Developer',
+    title: 'Сэтгэл зүй',
     avatar: Avatar5,
-    task: 28,
+    buddy: 28,
     rating: 4.8,
     review: 370,
     followed: true,
@@ -74,9 +74,9 @@ export const mentors: Mentor[] = [
   {
     id: 6,
     name: 'Jakob Saris',
-    title: '3D Design',
+    title: 'Улс төр',
     avatar: Avatar6,
-    task: 60,
+    buddy: 60,
     rating: 4.8,
     review: 870,
     followed: false,
@@ -84,9 +84,9 @@ export const mentors: Mentor[] = [
   {
     id: 7,
     name: 'Jeremy Zucker',
-    title: 'Web Developer',
+    title: 'Маркетинг',
     avatar: Avatar7,
-    task: 40,
+    buddy: 40,
     rating: 4.7,
     review: 750,
     followed: false,
@@ -94,9 +94,9 @@ export const mentors: Mentor[] = [
   {
     id: 8,
     name: 'Jason Statham',
-    title: 'IOS Developer',
+    title: 'Санхүү',
     avatar: Avatar8,
-    task: 60,
+    buddy: 60,
     rating: 4.9,
     review: 910,
     followed: true,

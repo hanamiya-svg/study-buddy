@@ -17,7 +17,7 @@ const MentorCard = ({ data }: MentorCardProps) => {
   return (
     <Card sx={{ userSelect: 'none' }}>
       <Stack alignItems="center" justifyContent="space-between">
-        <Stack alignItems="center" spacing={1}>
+        <Stack alignItems="center" spacing={1} justifyContent={"center"}>
           <Avatar
             src={data.avatar}
             component={Link}
@@ -55,7 +55,7 @@ const MentorCard = ({ data }: MentorCardProps) => {
             startIcon={data.followed ? '' : <IconifyIcon icon="gridicons:plus-small" />}
             fullWidth
           >
-            {data.followed ? 'Followed' : 'Follow'}
+            {data.followed ? 'Requested' : 'Send Request'}
           </Button>
         </CardActions>
       </Stack>
@@ -65,7 +65,7 @@ const MentorCard = ({ data }: MentorCardProps) => {
           <Stack alignItems="center" spacing={0.875}>
             <IconifyIcon icon="hugeicons:note" color="text.secondary" fontSize="h4.fontSize" />
             <Typography color="text.primary" fontSize="body2.fontSize" fontWeight={600}>
-              {data.task} Task
+              {data.buddy} Explorers
             </Typography>
           </Stack>
           <Stack alignItems="center" spacing={0.5}>
@@ -85,3 +85,5 @@ const MentorCard = ({ data }: MentorCardProps) => {
 };
 
 export default MentorCard;
+//bio heseg nemeh
+//chadvar nemeh heseg nameh
