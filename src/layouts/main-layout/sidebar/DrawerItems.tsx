@@ -25,8 +25,8 @@ const DrawerItems = () => {
       >
         <ButtonBase component={Link} href="/" disableRipple>
           <Image src={LogoImg} alt="logo" height={40} width={40} sx={{ mr: 1 }} />
-          <Typography variant="h3" color="text.primary" letterSpacing={1}>
-            DNX
+          <Typography variant="h5" color="text.primary" letterSpacing={1}>
+            NUM study buddy
           </Typography>
         </ButtonBase>
       </Stack>

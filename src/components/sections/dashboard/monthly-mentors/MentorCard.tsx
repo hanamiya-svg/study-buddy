@@ -62,13 +62,13 @@ const MentorCard = ({ data }: MentorCardProps) => {
 
       <CardContent sx={{ mt: 2.75 }}>
         <Stack alignItems="center" justifyContent="space-between">
-          <Stack alignItems="center" spacing={0.875}>
-            <IconifyIcon icon="hugeicons:note" color="text.secondary" fontSize="h4.fontSize" />
+          <Stack direction="row" alignItems="center" spacing={0.875}>
+            <IconifyIcon icon="hugeicons:person" color="text.secondary" fontSize="h4.fontSize" />
             <Typography color="text.primary" fontSize="body2.fontSize" fontWeight={600}>
               {data.buddy} Explorers
             </Typography>
           </Stack>
-          <Stack alignItems="center" spacing={0.5}>
+          <Stack direction="row" alignItems="center" spacing={0.5}>
             <IconifyIcon
               icon="material-symbols:star-rate-rounded"
               color="warning.main"

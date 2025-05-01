@@ -66,7 +66,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
       <Box flex={1} display="flex" justifyContent="center">
         <TextField
           variant="filled"
-          placeholder="Search Task"
+          placeholder="Search Guide"
           sx={{ width: 350, display: { xs: 'none', md: 'flex' } }}
           InputProps={{
             endAdornment: (
