@@ -1,8 +1,8 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import Activity from 'components/sections/dashboard/activity';
+// import Activity from 'components/sections/dashboard/activity';
 import TaskToday from 'components/sections/dashboard/task-today';
-import RunningTask from 'components/sections/dashboard/running-task';
+// import RunningTask from 'components/sections/dashboard/running-task';
 import UpcomingTask from 'components/sections/dashboard/upcoming-task';
 import WeekCalendar from 'components/sections/dashboard/week-calendar';
 import TaskOverview from 'components/sections/dashboard/task-overview';
@@ -21,6 +21,7 @@ const Dashboard = () => {
       {/* Main Section */}
       <Stack
         p={3.5}
+        
         spacing={3.5}
         direction="column"
         width={{ xs: '100%', md: '100%' }}
@@ -32,8 +33,8 @@ const Dashboard = () => {
           direction={{ xs: 'column', sm: 'row', md: 'column', xl: 'row' }}
           flexWrap="wrap"
         >
-          <RunningTask />
-          <Activity />
+          {/* <RunningTask /> */}
+          {/* <Activity /> */}
         </Stack>
 
         <MonthlyMentors />
