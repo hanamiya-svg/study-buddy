@@ -7,10 +7,10 @@ import Typography from '@mui/material/Typography';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import IconifyIcon from 'components/base/IconifyIcon';
-import { Mentor } from 'data/mentors';
+import { mentors } from 'data/mentors';
 
 interface MentorCardProps {
-  data: Mentor;
+  data: mentors;
 }
 
 const MentorCard = ({ data }: MentorCardProps) => {
