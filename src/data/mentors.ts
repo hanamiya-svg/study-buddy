@@ -9,96 +9,111 @@ import {
   Avatar8,
 } from 'data/images';
 
+
+
+
 export interface Mentor {
   id: number;
-  name: string;
-  title: string;
+  Last_name: string;
+  First_name: string;
+  Major: string;
+  Academic_year: string;
+  Bio: string;
+  Mentees: number;
+  Request: boolean;
   avatar: string;
-  buddy: number;
-  rating: number;
-  review: number;
-  followed: boolean;
 }
+
+
+
 
 export const mentors: Mentor[] = [
   {
-    id: 1,
-    name: 'Curious George',
-    title: 'Программ хангамж',
-    avatar: Avatar1,
-    buddy: 40,
-    rating: 4.7,
-    review: 750,
-    followed: false,
+    "id": 1,
+    "Last_name": "Самбууням",
+    "First_name": "Оч-Уянга",
+    "Major": "Програм хангамж",
+    "Academic_year": "3-р курс",
+    "Bio": "Вэб хөгжүүлэлт болон хиймэл оюун сонирхдог.",
+    "Mentees": 2,
+    "Request": true,
+    "avatar": Avatar1
   },
   {
-    id: 2,
-    name: 'Abraham Lincoln',
-    title: 'Компьютерын ухаан',
-    avatar: Avatar2,
-    buddy: 32,
-    rating: 4.9,
-    review: 510,
-    followed: true,
+    "id": 2,
+    "Last_name": "Энхбаатар",
+    "First_name": "Тэргэл",
+    "Major": "Компьютерын ухаан",
+    "Academic_year": "2-р курс",
+    "Bio": "Алгоритм бодох болон шатар тоглох дуртай.",
+    "Mentees": 1,
+    "Request": false,
+    "avatar": Avatar2
   },
   {
-    id: 3,
-    name: 'Alex Stanton',
-    title: 'Мэдээлэлийн технологи',
-    avatar: Avatar3,
-    buddy: 60,
-    rating: 4.9,
-    review: 970,
-    followed: false,
+    "id": 3,
+    "Last_name": "Цэрэндорж",
+    "First_name": "Номин",
+    "Major": "Өгөгдлийн шинжлэх ухаан",
+    "Academic_year": "4-р курс",
+    "Bio": "Өгөгдөл боловсруулах болон харагдах байдалд сонирхолтой.",
+    "Mentees": 3,
+    "Request": true,
+    "avatar": Avatar3
   },
   {
-    id: 4,
-    name: 'Richard Kyle',
-    title: 'Мультимедиа',
-    avatar: Avatar4,
-    buddy: 60,
-    rating: 4.7,
-    review: 730,
-    followed: false,
+    "id": 4,
+    "Last_name": "Ганболд",
+    "First_name": "Мөнх-Эрдэнэ",
+    "Major": "Мэдээллийн технологи",
+    "Academic_year": "1-р курс",
+    "Bio": "Шинэ оюутан бөгөөд сурах эрмэлзэлтэй.",
+    "Mentees": 0,
+    "Request": false,
+    "avatar": Avatar4
   },
   {
-    id: 5,
-    name: 'Brian Robinson',
-    title: 'Сэтгэл зүй',
-    avatar: Avatar5,
-    buddy: 28,
-    rating: 4.8,
-    review: 370,
-    followed: true,
+    "id": 5,
+    "Last_name": "Даваадорж",
+    "First_name": "Солонго",
+    "Major": "Кибер аюулгүй байдал",
+    "Academic_year": "3-р курс",
+    "Bio": "Ёс зүйн хакер болон систем хамгаалалт сонирхдог.",
+    "Mentees": 2,
+    "Request": true,
+    "avatar": Avatar5
   },
   {
-    id: 6,
-    name: 'Jakob Saris',
-    title: 'Улс төр',
-    avatar: Avatar6,
-    buddy: 60,
-    rating: 4.8,
-    review: 870,
-    followed: false,
+    "id": 6,
+    "Last_name": "Чимэд",
+    "First_name": "Түвшинтөгс",
+    "Major": "Програм хангамж",
+    "Academic_year": "2-р курс",
+    "Bio": "Сервер талын хөгжүүлэлт, Linux сонирхдог.",
+    "Mentees": 1,
+    "Request": false,
+    "avatar": Avatar6
   },
   {
-    id: 7,
-    name: 'Jeremy Zucker',
-    title: 'Маркетинг',
-    avatar: Avatar7,
-    buddy: 40,
-    rating: 4.7,
-    review: 750,
-    followed: false,
+    "id": 7,
+    "Last_name": "Нарантуяа",
+    "First_name": "Энхжин",
+    "Major": "Хиймэл оюун ухаан",
+    "Academic_year": "4-р курс",
+    "Bio": "Хэлний боловсруулалтын судалгаанд оролцдог.",
+    "Mentees": 4,
+    "Request": true,
+    "avatar": Avatar7
   },
   {
-    id: 8,
-    name: 'Jason Statham',
-    title: 'Санхүү',
-    avatar: Avatar8,
-    buddy: 60,
-    rating: 4.9,
-    review: 910,
-    followed: true,
-  },
+    "id": 8,
+    "Last_name": "Батсүх",
+    "First_name": "Билгүүн",
+    "Major": "Компьютерийн инженер",
+    "Academic_year": "1-р курс",
+    "Bio": "Ухаалаг төхөөрөмж бүтээх, робот судлах дуртай.",
+    "Mentees": 0,
+    "Request": false,
+    "avatar": Avatar8
+  }
 ];
