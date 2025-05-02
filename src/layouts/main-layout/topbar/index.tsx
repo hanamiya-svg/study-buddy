@@ -46,7 +46,7 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
           disableRipple
           sx={{ lineHeight: 0, display: { xs: 'none', sm: 'block', lg: 'none' } }}
         >
-          <Image src={LogoImg} alt="logo" height={54} width={54} />
+          <Image src={LogoImg} alt="logo" height={500} width={500} />
         </ButtonBase>
 
         <Toolbar sx={{ display: { xs: 'block', lg: 'none' }, ml: 1 }}>

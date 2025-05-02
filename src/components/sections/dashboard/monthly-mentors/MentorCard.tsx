@@ -83,14 +83,14 @@ const MentorCard = ({ data }: MentorCardProps) => {
             </Card>
           </div>
         </div>
-      </div>
-      <CardActions disableSpacing sx={{ mt: 0.5, pt: 0 }}>
+      </div >
+      <CardActions disableSpacing sx={{ mt: 2, backgroundColor: "#ffffff" }}>
         <Button
           variant="text"
           size="medium"
           sx={{
-            color: request ? 'text.secondary' : 'primary.main',
-            '& .MuiButton-startIcon': { mr: 0, pointerEvents: 'none' },
+            color: request ? 'text.secondary' : '#ff6517',
+            '& .MuiButton-startIcon': { pointerEvents: 'none' },
           }}
           startIcon={request ? '' : <IconifyIcon icon="gridicons:plus-small" />}
           fullWidth
