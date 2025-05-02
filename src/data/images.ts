@@ -1,5 +1,5 @@
-import Avatar1 from 'assets/images/avatars/avatar1.png';
-import Avatar2 from 'assets/images/avatars/avatar2.png';
+import Avatar1 from 'assets/images/avatars/avatar1.jpg';
+import Avatar2 from 'assets/images/avatars/avatar2.jpg';
 import Avatar3 from 'assets/images/avatars/avatar3.png';
 import Avatar4 from 'assets/images/avatars/avatar4.png';
 import Avatar5 from 'assets/images/avatars/avatar5.png';
