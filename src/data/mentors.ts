@@ -20,7 +20,6 @@ export interface Mentor {
   Academic_year: string;
   Bio: string;
   Mentees: number;
-  Request: boolean;
   avatar: string;
 }
 
@@ -36,7 +35,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "3-р курс",
     "Bio": "Вэб хөгжүүлэлт болон хиймэл оюун сонирхдог.",
     "Mentees": 2,
-    "Request": true,
     "avatar": Avatar1
   },
   {
@@ -47,7 +45,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "2-р курс",
     "Bio": "Алгоритм бодох болон шатар тоглох дуртай.",
     "Mentees": 1,
-    "Request": false,
     "avatar": Avatar2
   },
   {
@@ -58,7 +55,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "4-р курс",
     "Bio": "Өгөгдөл боловсруулах болон харагдах байдалд сонирхолтой.",
     "Mentees": 3,
-    "Request": true,
     "avatar": Avatar3
   },
   {
@@ -69,7 +65,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "1-р курс",
     "Bio": "Шинэ оюутан бөгөөд сурах эрмэлзэлтэй.",
     "Mentees": 0,
-    "Request": false,
     "avatar": Avatar4
   },
   {
@@ -80,7 +75,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "3-р курс",
     "Bio": "Ёс зүйн хакер болон систем хамгаалалт сонирхдог.",
     "Mentees": 2,
-    "Request": true,
     "avatar": Avatar5
   },
   {
@@ -91,7 +85,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "2-р курс",
     "Bio": "Сервер талын хөгжүүлэлт, Linux сонирхдог.",
     "Mentees": 1,
-    "Request": false,
     "avatar": Avatar6
   },
   {
@@ -102,7 +95,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "4-р курс",
     "Bio": "Хэлний боловсруулалтын судалгаанд оролцдог.",
     "Mentees": 4,
-    "Request": true,
     "avatar": Avatar7
   },
   {
@@ -113,7 +105,6 @@ export const mentors: Mentor[] = [
     "Academic_year": "1-р курс",
     "Bio": "Ухаалаг төхөөрөмж бүтээх, робот судлах дуртай.",
     "Mentees": 0,
-    "Request": false,
     "avatar": Avatar8
   }
 ];
