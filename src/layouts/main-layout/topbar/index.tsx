@@ -17,9 +17,17 @@ interface TopbarProps {
   isClosing: boolean;
   mobileOpen: boolean;
   setMobileOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  searchText: string;
+  setSearchText: (value: string) => void;
 }
 
-const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
+const Topbar = ({
+  isClosing,
+  mobileOpen,
+  setMobileOpen,
+  searchText,
+  setSearchText,
+}: TopbarProps) => {
   const handleDrawerToggle = () => {
     if (!isClosing) {
       setMobileOpen(!mobileOpen);
@@ -62,21 +70,38 @@ const Topbar = ({ isClosing, mobileOpen, setMobileOpen }: TopbarProps) => {
         </Toolbar>
       </Box>
 
-      {/* Center Section (Search) */}
-      <Box flex={1} display="flex" justifyContent="center">
-        <TextField
-          variant="filled"
-          placeholder="Search Guide"
-          sx={{ width: 350, display: { xs: 'none', md: 'flex' } }}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconifyIcon icon={'mynaui:search'} />
-              </InputAdornment>
-            ),
-          }}
-        />
-      </Box>
+      {/* Search Bar */}
+      <TextField
+        variant="filled"
+        placeholder="Search Guide"
+        value={searchText}
+        onChange={(e) => {
+          setSearchText(e.target.value); // Update searchText
+          console.log("Updated Search Text: ", e.target.value); // Check if it's updating correctly
+        }}
+        sx={{
+          width: 350,
+          '& .MuiFilledInput-root': {
+            backgroundColor: '#fff',
+            borderRadius: '999px',
+            border: '2px solid rgb(244, 203, 183)',
+            paddingLeft: 2,
+            '&:hover': {
+              borderColor: '#ff884d',
+            },
+            '&.Mui-focused': {
+              borderColor: '#fa9663 !important',
+            },
+          },
+        }}
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <IconifyIcon icon="mynaui:search" color="#ff6517" />
+            </InputAdornment>
+          ),
+        }}
+      />
 
       {/* Right Section */}
       <Box display="flex" alignItems="center" gap={2}>

@@ -11,14 +11,15 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import IconifyIcon from 'components/base/IconifyIcon';
 import { Mentor } from 'data/mentors';
+import { useState } from 'react';
 
 interface MentorCardProps {
   data: Mentor;
 }
 
-const request = false;
-
 const MentorCard = ({ data }: MentorCardProps) => {
+  const [requested, setRequested] = useState(data.request); // Track the request state
+
   return (
     <div style={{ display: 'inline-block'}}>
       <div className="card-rotator">
@@ -89,13 +90,14 @@ const MentorCard = ({ data }: MentorCardProps) => {
           variant="text"
           size="medium"
           sx={{
-            color: request ? 'text.secondary' : '#ff6517',
+            color: requested ? 'text.secondary' : '#ff6517',
             '& .MuiButton-startIcon': { pointerEvents: 'none' },
           }}
-          startIcon={request ? '' : <IconifyIcon icon="gridicons:plus-small" />}
+          startIcon={requested ? '' : <IconifyIcon icon="gridicons:plus-small" />}
           fullWidth
+          onClick={() => setRequested(!requested)} // <-- This toggles the value
         >
-          {request ? 'Requested' : 'Send Request'}
+          {requested ? 'Requested' : 'Send Request'}
         </Button>
       </CardActions>
   </div>

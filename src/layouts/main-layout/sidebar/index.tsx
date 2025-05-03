@@ -37,7 +37,7 @@ const Sidebar = ({ mobileOpen, setMobileOpen, setIsClosing }: SidebarProps) => {
         <DrawerItems />
       </Drawer>
 
-      <Drawer variant="permanent" sx={{ display: { xs: 'none', lg: 'block' } }} open>
+      <Drawer variant="permanent" sx={{ display: { xs: 'none', lg: 'block' }}} open>
         <DrawerItems />
       </Drawer>
     </Box>

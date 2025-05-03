@@ -21,6 +21,7 @@ export interface Mentor {
   Bio: string;
   Mentees: number;
   avatar: string;
+  request: boolean;
 }
 
 
@@ -35,7 +36,8 @@ export const mentors: Mentor[] = [
     "Academic_year": "3-р курс",
     "Bio": "Вэб хөгжүүлэлт болон хиймэл оюун сонирхдог.",
     "Mentees": 2,
-    "avatar": Avatar1
+    "avatar": Avatar1,
+    "request": false
   },
   {
     "id": 2,
@@ -45,7 +47,8 @@ export const mentors: Mentor[] = [
     "Academic_year": "2-р курс",
     "Bio": "Алгоритм бодох болон шатар тоглох дуртай.",
     "Mentees": 1,
-    "avatar": Avatar2
+    "avatar": Avatar2,
+    "request": false
   },
   {
     "id": 3,
@@ -55,7 +58,8 @@ export const mentors: Mentor[] = [
     "Academic_year": "4-р курс",
     "Bio": "Өгөгдөл боловсруулах болон харагдах байдалд сонирхолтой.",
     "Mentees": 3,
-    "avatar": Avatar3
+    "avatar": Avatar3,
+    "request": false
   },
   {
     "id": 4,
@@ -65,7 +69,8 @@ export const mentors: Mentor[] = [
     "Academic_year": "1-р курс",
     "Bio": "Шинэ оюутан бөгөөд сурах эрмэлзэлтэй.",
     "Mentees": 0,
-    "avatar": Avatar4
+    "avatar": Avatar4,
+    "request": false
   },
   {
     "id": 5,
@@ -75,7 +80,8 @@ export const mentors: Mentor[] = [
     "Academic_year": "3-р курс",
     "Bio": "Ёс зүйн хакер болон систем хамгаалалт сонирхдог.",
     "Mentees": 2,
-    "avatar": Avatar5
+    "avatar": Avatar5,
+    "request": false
   },
   {
     "id": 6,
@@ -85,7 +91,8 @@ export const mentors: Mentor[] = [
     "Academic_year": "2-р курс",
     "Bio": "Сервер талын хөгжүүлэлт, Linux сонирхдог.",
     "Mentees": 1,
-    "avatar": Avatar6
+    "avatar": Avatar6,
+    "request": false
   },
   {
     "id": 7,
@@ -95,7 +102,8 @@ export const mentors: Mentor[] = [
     "Academic_year": "4-р курс",
     "Bio": "Хэлний боловсруулалтын судалгаанд оролцдог.",
     "Mentees": 4,
-    "avatar": Avatar7
+    "avatar": Avatar7,
+    "request": false
   },
   {
     "id": 8,
@@ -105,6 +113,7 @@ export const mentors: Mentor[] = [
     "Academic_year": "1-р курс",
     "Bio": "Ухаалаг төхөөрөмж бүтээх, робот судлах дуртай.",
     "Mentees": 0,
-    "avatar": Avatar8
+    "avatar": Avatar8,
+    "request": false
   }
 ];

@@ -35,7 +35,7 @@ const ListItem = ({ subheader, icon, path, active }: MenuItem) => {
         primary={subheader}
         sx={{
           '& .MuiListItemText-primary': {
-            color: active ? 'text.primary' : null,
+            color: active ? 'text.primary' : 'null',
           },
         }}
       />
